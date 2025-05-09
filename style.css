@@ -44,12 +44,23 @@ body{
 #obstacle{
     position: absolute;
     bottom: 0;
-    right: -60px;
+    right: 600px;
     width: 40px;
     height: 40px;
     background-color: green;
     /* animation: moveObstacle 2s linear infinite; */
 }
+
+#hitbox {
+    position: absolute;
+    bottom: 1.5px;
+    left: 15px;
+    width: 24px;
+    height: 30px;
+    /* background-color: red; */
+    /* z-index: -1; garante que não tapa o emoji */
+}
+
 
 /* @keyframes moveObstacle {
     0% {

@@ -55,8 +55,12 @@ function gameLoop() {
 
 // Deteção de colisão
 function checkCollision() {
-    const playerRect = player.getBoundingClientRect();
+    const hitbox = document.getElementById("hitbox");
+    const playerRect = hitbox.getBoundingClientRect(); // agora usa a hitbox
     const obstacleRect = obstacle.getBoundingClientRect();
+
+    console.log("Hitbox:", playerRect);
+    console.log("Obstacle:", obstacleRect);
 
     if (
         obstacleRect.left < playerRect.right &&
