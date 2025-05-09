@@ -57,8 +57,10 @@ body{
     left: 15px;
     width: 24px;
     height: 30px;
-    background-color: red; 
-    z-index: -1; /* garante que não tapa o emoji */
+
+/* ------ HITBOX ------ */
+    /* background-color: red; 
+    z-index: -1;  */
 }
 
 
