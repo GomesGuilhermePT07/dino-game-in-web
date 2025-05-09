@@ -31,3 +31,25 @@ function jump() {
         player.style.bottom = jumpHeight + "px";
     }, 20);
 }
+
+// Deteção de colisão
+function checkCollision() {
+    const playerRect = player.getBoundingClientRect();
+    const obstacle = obstacle.getBoundingClientRect();
+
+    if (
+        obstacleRect.left < playerRect.right &&
+        obstacleRect.right > playerRect.left &&
+        obstacleRect.bottom > playerRect.top
+    ) {
+        alert("Game Over! Pontuação: " + score);
+        score = 0;
+        scoreDisplay.textContent = "0";
+    }
+}
+
+setInterval(() => {
+    score++;
+    scoreDisplay.textContent = score;
+    checkCollision();
+}, 100);
