@@ -53,14 +53,12 @@ body{
 
 #hitbox {
     position: absolute;
-    bottom: 1.7px;
+    bottom: 1.5px;
     left: 15px;
     width: 24px;
     height: 30px;
-
-/* ------ HITBOX ------ */
-    /* background-color: red; 
-    z-index: -1;  */
+    /* background-color: red; */
+    /* z-index: -1; garante que não tapa o emoji */
 }
 
 
