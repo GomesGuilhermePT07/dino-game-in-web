@@ -35,7 +35,7 @@ function jump() {
 // Deteção de colisão
 function checkCollision() {
     const playerRect = player.getBoundingClientRect();
-    const obstacle = obstacle.getBoundingClientRect();
+    const obstacleRect = obstacle.getBoundingClientRect();
 
     if (
         obstacleRect.left < playerRect.right &&
